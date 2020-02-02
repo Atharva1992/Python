@@ -8,12 +8,13 @@ for line in fhand :
     if len(y) > 0 :
         sumlist.append(y)
 
+print (sumlist)
 #Changing list of list to a list of numbers
 numbers1 = list()
 for i in sumlist :
     for j in i :
         numbers1.append(j)
-
+print(numbers1)
 sumation1 = 0
 for int1 in numbers1 :
     sumation1 = sumation1 + int(int1)
