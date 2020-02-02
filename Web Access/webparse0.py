@@ -1,21 +1,21 @@
+# To run this, download the BeautifulSoup zip file
+# http://www.py4e.com/code3/bs4.zip
+# and unzip it in the same directory as this file
+
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
 
+# Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-
-url = input("Enter URL :")
-#url = "http://www.dr-chuck.com/page1.htm"
-#https://en.wikipedia.org/wiki/United_Kingdom
+url = input('Enter - ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-#print(soup)
+# Retrieve all of the anchor tags
 tags = soup('a')
-for tag in tags :
+for tag in tags:
     print(tag.get('href', None))
-# Important note : I was not getting output because I had used print(tag.get('href ', None))
-# The issue was that there was a space after href. Be careful
