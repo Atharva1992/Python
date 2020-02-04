@@ -7,7 +7,7 @@ urlinit = "https://maps.googleapis.com/maps/api/geocode/json?"
 key = "Enter the API key here"
 parm = dict()
 parm['address'] = address
-parm['key'] = "AIzaSyBBSQ2ymnmRgHtuR-KGxAOhJcYY_EOqrb4"
+parm['key'] = "Enter the API key here"
 
 
 url = urlinit + urllib.parse.urlencode(parm)
