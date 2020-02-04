@@ -4,7 +4,7 @@ import json
 address = input("Enter the Address : ")
 
 urlinit = "https://maps.googleapis.com/maps/api/geocode/json?"
-key = "AIzaSyBBSQ2ymnmRgHtuR-KGxAOhJcYY_EOqrb4"
+key = "Enter the API key here"
 parm = dict()
 parm['address'] = address
 parm['key'] = "AIzaSyBBSQ2ymnmRgHtuR-KGxAOhJcYY_EOqrb4"
